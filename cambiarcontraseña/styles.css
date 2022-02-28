@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background: #e9d3e3;
+  padding: 0 10px;
+}
+
+/*color y control del formulario*/
+.container{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+/*tamaño, color y control del titulo*/
+.container .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #050401;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container .form{
+  width: 100%;
+}
+
+.container.form .input-field{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/*Color del texto*/
+.container .form .input-field label{
+   width: 200px;
+   color: #0c0a0a;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.container .form .input-field .input,
+.container .form .input-field .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 13px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.container .form .input-field .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+/*color de contorno del texbox*/
+.container .form .input-field .input:focus,
+.container .form .input-field .textarea:focus,
+.container .form .input-field .custom_select select:focus{
+  border: 1px solid #f559a2;
+}
+
+.container .form .input-field p{
+   font-size: 14px;
+   color: #a13277;
+}
+
+
+/*color y tamaño del boton*/
+.container .form .input-field .btn{
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #a55979;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+/*efecto de color sobre el boton*/
+.container .form .input-field .btn:hover{
+  background: #e246ae;
+}
+
+.container .form .input-field:last-child{
+  margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+  .container .form .input-field{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container .form .input-field label{
+    margin-bottom: 5px;
+  }
+  .container .form .input-field.terms{
+    flex-direction: row;
+  }
+}
